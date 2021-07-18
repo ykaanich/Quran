@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BEF4BA8-DABA-4D83-B629-BA31523F2FBF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Quran</RootNamespace>
+    <AssemblyName>Quran</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publier\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExtendedRichTextBox">
+      <HintPath>..\ExtendedRichTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Cas.cs" />
+    <Compile Include="Class\ChoixDifference.cs" />
+    <Compile Include="Class\Classeur.cs" />
+    <Compile Include="Class\CodeLecteur.cs" />
+    <Compile Include="Class\Difference.cs" />
+    <Compile Include="Class\DifferenceCas.cs" />
+    <Compile Include="Class\Ensemble.cs" />
+    <Compile Include="Class\Exclusions.cs" />
+    <Compile Include="Frm_choixClasseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_choixClasseur.Designer.cs">
+      <DependentUpon>Frm_choixClasseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Classeur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Classeur.Designer.cs">
+      <DependentUpon>Frm_Classeur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CodeLecteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CodeLecteur.Designer.cs">
+      <DependentUpon>Frm_CodeLecteur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Exclusion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Exclusion.Designer.cs">
+      <DependentUpon>Frm_Exclusion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_listClasseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_listClasseur.Designer.cs">
+      <DependentUpon>Frm_listClasseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_listeCodeLecteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_listeCodeLecteur.Designer.cs">
+      <DependentUpon>Frm_listeCodeLecteur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ListExclusion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ListExclusion.Designer.cs">
+      <DependentUpon>Frm_ListExclusion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ListOrigine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ListOrigine.Designer.cs">
+      <DependentUpon>Frm_ListOrigine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ListSegment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ListSegment.Designer.cs">
+      <DependentUpon>Frm_ListSegment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_segment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_segment.Designer.cs">
+      <DependentUpon>Frm_segment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Lecteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Lecteur.Designer.cs">
+      <DependentUpon>Frm_Lecteur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_main.Designer.cs">
+      <DependentUpon>Frm_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_origine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_origine.Designer.cs">
+      <DependentUpon>Frm_origine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\intersection.cs" />
+    <Compile Include="Class\Lecteur.cs" />
+    <Compile Include="Class\ordreLecteur.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_choixClasseur.resx">
+      <DependentUpon>Frm_choixClasseur.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Classeur.resx">
+      <DependentUpon>Frm_Classeur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CodeLecteur.resx">
+      <DependentUpon>Frm_CodeLecteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Exclusion.resx">
+      <DependentUpon>Frm_Exclusion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_listClasseur.resx">
+      <DependentUpon>Frm_listClasseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_listeCodeLecteur.resx">
+      <DependentUpon>Frm_listeCodeLecteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ListExclusion.resx">
+      <DependentUpon>Frm_ListExclusion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ListOrigine.resx">
+      <DependentUpon>Frm_ListOrigine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ListSegment.resx">
+      <DependentUpon>Frm_ListSegment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_segment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_segment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Lecteur.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_Lecteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_main.resx">
+      <DependentUpon>Frm_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_origine.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frm_origine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
